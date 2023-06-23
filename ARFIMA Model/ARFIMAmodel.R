@@ -4,6 +4,14 @@
 # If you find any error, please contact bruno.fernandes03@outlook.com
 # -------------------------------------------------------------------------------------
 
+library(astsa)
+library(lmtest)
+library(fracdiff)
+library(pracma)
+library(arfima)
+library(moments)
+
+
 # Simulating the ARFIMA model
 serieSim = ts(arfima.sim(1000, model = list(phi = 0.3, dfrac = 0.45)))
 
