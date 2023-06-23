@@ -4,7 +4,6 @@
 # If you find any error, please contact bruno.fernandes03@outlook.com
 # -------------------------------------------------------------------------------------
 
-library(readxl)
 library(astsa)
 library(lmtest)
 library(fracdiff)
