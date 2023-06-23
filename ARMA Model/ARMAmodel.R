@@ -12,8 +12,7 @@ library(pracma)
 library(moments)
 
 
-data = read_excel("~/Library/CloudStorage/GoogleDrive-bfernandes@usp.br/My Drive/Mestrado/Sétimo e Oitavo Bimestres/Análise Séries Temporais/Provas/Prova Prática I/prova 1- seires/prova 1-seire 05.xlsx", 
-                  skip = 1)
+data = read.csv("~/ARMA Model/timeseries.csv")
 serie = ts(data = data$Xt, start = 1948, frequency = 12)
 
 # Estatisticas descritivas da serie original
