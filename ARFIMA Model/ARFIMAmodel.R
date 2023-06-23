@@ -11,6 +11,7 @@ library(pracma)
 library(arfima)
 library(moments)
 
+set.seed(251200)
 
 # Simulating the ARFIMA model
 serieSim = ts(arfima.sim(1000, model = list(phi = 0.3, dfrac = 0.45)))
