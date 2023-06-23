@@ -4,8 +4,6 @@
 # If you find any error, please contact bruno.fernandes03@outlook.com
 # -------------------------------------------------------------------------------------
 
-
-library(readxl)
 library(astsa)
 library(fGarch)
 library(rugarch)
@@ -17,7 +15,7 @@ library(moments)
 set.seed(251200)
 
 # Modeling the first moment
-data = read_excel("~/Downloads/MAE518-5882-series prova2.xlsx", sheet = 20)$x
+data = read.csv("~/GARCH Model/timeseries.csv")$x
 
 plot(data, type = "l")
 mean(data)
